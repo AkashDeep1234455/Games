@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Old+South+Arabian&family=Rubik+Scribble&display=swap" rel="stylesheet">
+    <title>Simon Says</title>
+</head>
+<body>
+    <div class="startGame">
+        <h1 class="gameName">Simon Says</h1>
+
+        <h3 class="instruction">
+            <span class="material-symbols-outlined" id="left">
+            skull
+            </span>
+            <span id="text">Do What Simon Says</span>
+
+            <span class="material-symbols-outlined">
+            skull
+             </span>
+        </h3> 
+        <div class="instructionText">
+            <p>
+                Mirror Simon's moves to keep the game going! 
+            </p>
+        </div>
+
+        <div id="playButton">
+            <span class="material-symbols-outlined">
+                drag_indicator
+            </span>
+            PLAY
+            <span class="material-symbols-outlined">
+                    drag_indicator
+            </span>
+        </div>        
+    </div>
+    <div id="backDiv">
+            
+    </div>
+
+
+    <!-- Now lets create our game setup -->
+
+    <div id="gameMenu">
+        <button class="start">START</button>
+        <button class="start" id="quit">QUIT</button>
+        <div class="gameEquipment">
+            <div class="button">
+                <audio src="mixkit-truck-horn-720.wav"></audio>
+                <button class="green"></button>
+                <button class="yellow"></audio></button>
+                <button class="red"></audio></button>
+                <button class="blue"></button>
+            </div>
+        </div>
+
+        <div class="wrong">
+            <p>WRONG</p>
+            <p class="restart">Restarting Game...</p>
+        </div>
+        <div class="scorecard">
+            <p >SCORE: <span class="score"></span></p>
+            <p >LEVEL:<span class="level"></span></p>
+            <p >HIGH SCORE:<span class="highscore"></span></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
